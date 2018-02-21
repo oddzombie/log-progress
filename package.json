@@ -1,0 +1,13 @@
+{
+  "name": "@ih/log-progress",
+  "version": "0.0.1",
+  "description": "pretty cli progress and spinners for node",
+  "main": "index.js",
+  "author": "Ian Holser",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.3.1",
+    "log-update": "^2.3.0",
+    "window-size": "^1.1.0"
+  }
+}
