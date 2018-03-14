@@ -96,8 +96,8 @@ class LogProgress {
   start() {
     this.consoleLog = console.log;
     this.consoleError = console.error;
-    console.log = text => this.logs.push({ value: text, type: 'LOG' });
-    console.error = error => this.logs.push({ value: error, type: 'ERROR' });
+    console.log = text => this.logs.push({ value: text.toString(), type: 'LOG' });
+    console.error = error => this.logs.push({ value: error.toString(), type: 'ERROR' });
     this.interval = setInterval(() => this.tick(), 80);
     return this;
   }
@@ -138,7 +138,7 @@ class LogProgress {
 
   removeTask(name) {
     const task = this.task(name);
-    this.tasks = this.tasks.filter(item => item === task);
+    this.tasks = this.tasks.filter(item => item !== task);
   }
 
   clearTasks() {
