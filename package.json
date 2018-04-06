@@ -9,5 +9,12 @@
     "chalk": "^2.3.1",
     "log-update": "^2.3.0",
     "window-size": "^1.1.0"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "jsxBracketSameLine": true,
+    "printWidth": 120,
+    "singleQuote": true,
+    "trailingComma": "all"
   }
 }
