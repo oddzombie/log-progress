@@ -1,6 +1,6 @@
 {
   "name": "@ih/log-progress",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "pretty cli progress and spinners for node",
   "main": "index.js",
   "author": "Ian Holser",
